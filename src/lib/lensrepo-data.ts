@@ -1,7 +1,7 @@
 export type FileData = { path: string; language: string; content: string };
 export type SearchResult = { path: string; line: number; snippet: string };
 
-export const repositoryFiles: FileData[] = [
+export const repositoryFiles: [FileData, ...FileData[]] = [
   {
     path: "src/auth/login.ts",
     language: "TypeScript",
