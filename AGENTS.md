@@ -8,3 +8,7 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+## Project architecture
+
+- Keep LensRepo's backend-ready demo operations in `src/lib/lensrepo-data.ts`; UI components consume the same async boundary future APIs will use.
